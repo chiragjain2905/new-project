@@ -1,0 +1,9 @@
+<h1></h1>
+<button (click)="getData()">show Travel details</button>
+<ul *ngFor="let p of det.data">
+    <li>LOCATION-{{p.location}}
+    </li>
+    <li>
+        DATA:{{p.data}}
+    </li>
+</ul>

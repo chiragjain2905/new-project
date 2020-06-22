@@ -1,0 +1,12 @@
+<h1> </h1>
+<button (click)="getData()">show City wise</button>
+<ul *ngFor="let p of detail">
+    <li>LOCATION-{{p.location}}
+    </li>
+    <li>
+        CONFIRMED:{{p.confirmed}}
+    </li>
+    <li>
+        DEAD :{{p.dead}}
+    </li>
+</ul>
