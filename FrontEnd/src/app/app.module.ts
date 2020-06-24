@@ -1,26 +1,27 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import{HttpClientModule}from'@angular/common/http';
 import { CoronaService } from './corona.service';
-import { CountryComponent } from './country/country.component';
-import { CityComponent } from './city/city.component';
-import { ProvinceComponent } from './province/province.component';
-import { TravelComponent } from './travel/travel.component';
-import { NewsComponent } from './news/news.component';
-import {FormsModule} from '@angular/forms'
+
+import {FormsModule} from '@angular/forms';
+import { MainPageComponent } from './main-page/main-page.component';
+import { MainPageHeaderComponent } from './main-page-header/main-page-header.component';
+import { MainPageFooterComponent } from './main-page-footer/main-page-footer.component';
+import { MainPageHomeComponent } from './main-page-home/main-page-home.component';
+import { DashboardComponent } from './dashboard/dashboard.component'
 @NgModule({
   declarations: [
     AppComponent,
-    CountryComponent,
-    CityComponent,
-    ProvinceComponent,
-    TravelComponent,
-    NewsComponent,
-    
+    routingComponents,
+    MainPageComponent,
+    MainPageHeaderComponent,
+    MainPageFooterComponent,
+    MainPageHomeComponent,
+    DashboardComponent    
   ],
   imports: [
     BrowserModule,

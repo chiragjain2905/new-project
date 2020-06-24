@@ -7,6 +7,7 @@ import { CoronaService } from '../corona.service';
 })
 export class CountryComponent implements OnInit {
   public detail;
+  public countryData;
   constructor(private covid:CoronaService) { }
 
   ngOnInit(): void {
@@ -18,6 +19,17 @@ export class CountryComponent implements OnInit {
     this.covid.getCountryDetails()
     .subscribe(res=>{
       this.detail=res.data
+      console.log(this.detail)
+    });
+  }
+  getIndiaData(data:string){
+    this.covid.getCountryDetails()
+    .subscribe(res=>{
+      res.data.forEach(element => {
+        if(element.location.toLowerCase()==data.toLowerCase()){
+          this.countryData=element
+        }
+      });
       console.log(this.detail)
     });
   }
