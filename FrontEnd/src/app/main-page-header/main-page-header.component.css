@@ -6,7 +6,7 @@
     font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
-    padding-left: 400px;
+    padding-left: 600px;
     border: solid black;
     border-radius: 10px;
 
@@ -30,10 +30,10 @@
     /* only if you want fixed height */
  }
  .latest{
-     font-size: xx-large;
+     font-size: 40px;
      font-style: bolder;
-     padding-left: 42%;
-    font-weight: 700;
+     padding-left: 45%;
+    font-weight: 800;
     background-color: white;
     border: solid black;
     

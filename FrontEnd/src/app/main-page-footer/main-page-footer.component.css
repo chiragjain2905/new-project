@@ -1,0 +1,11 @@
+p{
+    height: 300px;
+    width: 300px;
+    margin: 100px 0px 0px 300px;
+    background-color: blue;
+    transition: 1s;
+    display: flex;
+}
+p:hover{
+    transform: scale(2);
+}
