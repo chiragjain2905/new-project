@@ -4,7 +4,7 @@
     background-color: lightgrey;
     color: black;
     font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:URW Chancery L, cursive;
     font-style: italic;
     padding-left: 600px;
     border: solid black;
@@ -32,10 +32,11 @@
  .latest{
      font-size: 40px;
      font-style: bolder;
-     padding-left: 45%;
+    
     font-weight: 800;
     background-color: white;
     border: solid black;
+    text-align: center;
     
  }
  img {
