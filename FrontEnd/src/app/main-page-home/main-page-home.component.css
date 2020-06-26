@@ -1,6 +1,7 @@
 .search{
     width: 750px;
-    margin-left: 650PX;
+    display: flex;
+    margin-left: 28%;
     margin-top: 50px;
     margin-bottom: 60px;
     font-size: 40px;
