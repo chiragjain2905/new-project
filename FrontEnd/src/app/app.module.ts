@@ -13,6 +13,7 @@ import { MainPageHeaderComponent } from './main-page-header/main-page-header.com
 import { MainPageFooterComponent } from './main-page-footer/main-page-footer.component';
 import { MainPageHomeComponent } from './main-page-home/main-page-home.component';
 import { DashboardComponent } from './dashboard/dashboard.component'
+import {NewsComponent} from './news/news.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,13 +22,15 @@ import { DashboardComponent } from './dashboard/dashboard.component'
     MainPageHeaderComponent,
     MainPageFooterComponent,
     MainPageHomeComponent,
-    DashboardComponent    
+    DashboardComponent   ,
+    NewsComponent 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+  
 
   ],
   providers: [CoronaService],

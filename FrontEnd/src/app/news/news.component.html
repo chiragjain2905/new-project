@@ -1,0 +1,5 @@
+<button (click)="getData()">show news</button>
+<ul *ngFor="let el of detail">
+    <li><a>{{el.title}}</a></li>
+    <li><a [href]="el.url">{{el.url}}</a></li>
+</ul>

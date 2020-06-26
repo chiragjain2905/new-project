@@ -22,11 +22,12 @@ export class CountryComponent implements OnInit {
       console.log(this.detail)
     });
   }
+
   getIndiaData(data:string){
     this.covid.getCountryDetails()
     .subscribe(res=>{
       res.data.forEach(element => {
-        if(element.location.toLowerCase()==data.toLowerCase()){
+        if(element.location.toLowerCaspue()==data.toLowerCase()){
           this.countryData=element
         }
       });

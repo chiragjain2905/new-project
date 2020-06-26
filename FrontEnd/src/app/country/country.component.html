@@ -1,7 +1,10 @@
 
 <button (click)="getData()">show Country Wise </button>
 <input #box (keyup.enter)="getIndiaData(box.value)">
-<h3>{{countryData.location}}: {{countryData.confirmed}}</h3>
+<h3><li>{{countryData.location}}: {{countryData.confirmed}}</li>
+    <li>{{countryData.recovered}}</li>
+    <li>{{countryData.dead}}</li>
+</h3>
 <ul *ngFor="let p of detail">
     <li>LOCATION-{{p.location}}
     </li>

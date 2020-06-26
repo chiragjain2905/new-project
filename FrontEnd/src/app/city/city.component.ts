@@ -19,8 +19,31 @@ public detail
     this.covid.getCityDetails()
     .subscribe(res=>
       this.detail=res.data
-    );
- 
-  }
+    )};
+public cityName;
+cityConfirmed;
+cityDead;
+cityRecovered
+cil;
+    getcityData(data:string){
+      this.covid.getCityDetails()
+      .subscribe(res=>{
+        res.data.forEach(element => {
+          if(element.location.toLowerCase()==data.toLowerCase()){
+            this.cityName=element.location
+            this.cityConfirmed=element.confirmed
+            this.cityDead=element.dead
+            this.cityRecovered=element.recovered
+            this.cil=":"
 
+
+            
+
+            
+          }
+        });
+      })
+  
+
+}
 }

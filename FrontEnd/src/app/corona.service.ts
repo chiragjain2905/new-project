@@ -25,8 +25,10 @@ export class CoronaService {
  
   }
   getCityDetails():any{
-   return this.http.get('https://www.trackcorona.live/api/cities')
+   return this.http.get('https://www.trackcorona.live/api/cities');
   }
- 
+  getNewsDetails():any{
+    return this.http.get('http://newsapi.org/v2/everything?q=bitcoin&from=2020-05-24&sortBy=publishedAt&apiKey=7c81fb6aa1c84d57b9863aa84307f3db')
+  }
 }
 

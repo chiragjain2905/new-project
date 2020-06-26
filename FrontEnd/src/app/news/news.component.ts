@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CoronaService } from '../corona.service';
 
 @Component({
   selector: 'app-news',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewsComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(private covid:CoronaService) { }
+public detail;
+  ngOnInit( ): void {
   }
+  getData(){
+    this.covid.getNewsDetails()
+    .subscribe(res=>{
+      this.detail=res.articles
+      console.log(this.detail)
+    });
+  }
+
 
 }
