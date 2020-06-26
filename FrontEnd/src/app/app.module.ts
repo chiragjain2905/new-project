@@ -12,8 +12,8 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { MainPageHeaderComponent } from './main-page-header/main-page-header.component';
 import { MainPageFooterComponent } from './main-page-footer/main-page-footer.component';
 import { MainPageHomeComponent } from './main-page-home/main-page-home.component';
-import { DashboardComponent } from './dashboard/dashboard.component'
-import {NewsComponent} from './news/news.component'
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { JumbotronComponent } from './jumbotron/jumbotron.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,8 +22,8 @@ import {NewsComponent} from './news/news.component'
     MainPageHeaderComponent,
     MainPageFooterComponent,
     MainPageHomeComponent,
-    DashboardComponent   ,
-    NewsComponent 
+    DashboardComponent,
+    JumbotronComponent    
   ],
   imports: [
     BrowserModule,
