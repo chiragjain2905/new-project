@@ -1,19 +1,62 @@
 
 <button (click)="getData()">show Country Wise </button>
-<input #box (keyup.enter)="getIndiaData(box.value)">
-<div>
+<input #box (keyup.enter)="getIndiaData(box.value)" placeholder="Type The country name">
+<div >
+    
+    <table>
+        <tr >
+            <th>LOCATION</th>
+            <th>CONFIRMED</th>
+            <th>DEAD</th>
+          </tr>
+    <tr >
+    
+        <td>{{countryName}} 
+        </td>
+        <td>
+            {{countryConfirmed}}
+        </td>
+        <td>
+            {{countryDead}}
+        </td>
+    </tr>
+    </table>
+    
+   
+</div>
+<table>
+    <tr >
+        <th>LOCATION</th>
+        <th>CONFIRMED</th>
+        <th>DEAD</th>
+      </tr>
+<tr *ngFor="let p of detail">
+
+    <td>{{p.location}}
+    </td>
+    <td>
+        {{p.confirmed}}
+    </td>
+    <td>
+        {{p.dead}}
+    </td>
+</tr>
+</table>
+<!--<div>
     <li>{{countryName}} {{cil}} {{countryConfirmed}}</li>
     <li>{{countryRecovered}}</li>
     <li>{{countryDead}}</li>
 </div>
-<ul *ngFor="let p of detail">
-    <li>LOCATION-{{p.location}}
-    </li>
-    <li>
-        CONFIRMED:{{p.confirmed}}
-    </li>
-    <li>
-        DEAD :{{p.dead}}
-    </li>
-</ul>
-<h1>{{detail}}</h1>
+<table>
+    <tr *ngFor="let p of detail">
+        <td>LOCATION-{{p.location}}
+        </td>
+        <td>
+            CONFIRMED:{{p.confirmed}}
+        </td>
+        <td>
+            DEAD :{{p.dead}}
+        </td>
+    </tr>
+    <h1>{{detail}}</h1>
+</table>-->

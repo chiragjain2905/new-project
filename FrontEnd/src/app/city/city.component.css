@@ -3,8 +3,54 @@
 }
 button{
     color: black;
+    font-size: x-large;
+    display: flex;
+    margin-left: 45%;
 
 }
 input{
     color: black;
+    margin-left: 40%;
+    width: 20%;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: x-large;
+    text-align: center;
 }
+table {
+    margin-left: 25%;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    background-color: white;
+    
+  }
+  
+   th {
+    position: relative;
+    border: 1px solid white;
+    text-align: center;
+    padding: 8px;
+    color: white;
+    background-color: black;
+
+  }
+  td{
+    border: 1px solid black;
+    text-align: center;
+    padding: 8px;
+    position: relative;
+    color: black;
+    font-family: cursive;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  p{
+     width: 20%;
+
+    margin-left: 40%;
+    
+  }
+ 

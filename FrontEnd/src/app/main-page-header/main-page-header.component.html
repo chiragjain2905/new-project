@@ -14,12 +14,14 @@
       </div>
     <div class="latest">
       LATEST DATA*
-      <div class="dropdown">
-        <select name="" id="" #vl (change)="nav(vl.value)">
-             <option value="/city"  ><h3 routerLink="/city">city wise</h3>
+      <div class="dropdown " >
+        <select class="drop" name="" id="" #vl (change)="nav(vl.value)" >
+          <option value="" disabled selected> SELECT YOUR ORIGIN</option>
+ 
+             <option value="/city"  ><h3 routerLink="/city">--CITY--</h3>
             </option>
-             <option value="/country" ><h3 routerLink="/country">country wise</h3></option>
-             <option value="/travel" ><h3 routerLink="/travel">travel wise</h3></option>
+             <option value="/country" ><h3 routerLink="/country">--COUNTRY--</h3></option>
+             <option value="/travel" ><h3 routerLink="/travel">--TRAVEL--</h3></option>
             </select>
         
    </div>

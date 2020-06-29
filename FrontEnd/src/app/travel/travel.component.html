@@ -1,16 +1,35 @@
 <h1></h1>
 <button (click)="getData()">show Travel details</button>
-<input type="text" #vl  (keyup.enter)="getCountryData(vl.value)">
+<input type="text" #vl placeholder="travel details " (keyup.enter)="getCountryData(vl.value)">
+
+
 <div>
-    <p>{{countryName}}</p>
-    <ul *ngFor="let i of countryArr">
-        <li >{{i}}<br></li>
-    </ul>
+    <table>
+        <th>LOCATION</th>
+        <th>
+            DATA
+        </th>
+        <tr >
+           <td>{{countryName}}  </td> 
+           <td>
+               <ul *ngFor="let i of countryArr">
+                <li >{{i}}<br></li>
+               </ul>
+           
+           </td>
+        </tr>
+    </table>
+   
+   
 </div>
-<ul *ngFor="let p of det">
-    <li>LOCATION-{{p.location}}
-    </li>
-    <li>
-        DATA:{{p.data}}
-    </li>
-</ul>
+<table>
+    <th>LOCATION</th>
+    <th>DATA</th>
+<tr *ngFor="let p of det">
+    <td>{{p.location}}
+    </td>
+    <td>
+        {{p.data}}
+    </td>
+</tr>
+</table>

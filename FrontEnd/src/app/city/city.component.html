@@ -1,18 +1,47 @@
 <h1> </h1>
 <button (click)="getData()">show City wise</button>
-<input name="inp" #box (keyup.enter)="getcityData(box.value)" (blur)="0" >
-<div>
-    <li>{{cityName}} {{cil}} {{cityConfirmed}}</li>
-    <li>{{cityRecovered}}</li>
-    <li>{{cityDead}}</li>
+<input name="inp" #box (keyup.enter)="getcityData(box.value)" placeholder="type the city name" (blur)="0" >
+<div >
+    
+    <table>
+        <tr >
+            <th>LOCATION</th>
+            <th>CONFIRMED</th>
+            <th>DEAD</th>
+          </tr>
+    <tr >
+    
+        <td>{{cityName}}
+        </td>
+        <td>
+            {{cityConfirmed}}
+        </td>
+        <td>
+            {{cityDead}}
+        </td>
+    </tr>
+    </table>
+    
+   
 </div>
-<ul *ngFor="let p of detail">
-    <li>LOCATION-{{p.location}}
-    </li>
-    <li>
-        CONFIRMED:{{p.confirmed}}
-    </li>
-    <li>
-        DEAD :{{p.dead}}
-    </li>
-</ul>
+<table>
+    <tr >
+        <th>LOCATION</th>
+        <th>CONFIRMED</th>
+        <th>DEAD</th>
+      </tr>
+<tr *ngFor="let p of detail">
+
+    <td>{{p.location}}
+    </td>
+    <td>
+        {{p.confirmed}}
+    </td>
+    <td>
+        {{p.dead}}
+    </td>
+</tr>
+</table>
+<!--<li>{{cityName}} {{cil}} {{cityConfirmed}}</li>
+        <li>{{cityRecovered}}</li>
+        <li>{{cityDead}}</li>-->
