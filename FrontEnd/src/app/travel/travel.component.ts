@@ -9,10 +9,39 @@ export class TravelComponent implements OnInit {
 
   constructor(private covid:CoronaService) { }
 public det;
+
+countryName;
+countryData;
+countryArr;
+
   ngOnInit(): void {
   }
   getData(){
     this.covid.getTravelDetails()
-    .subscribe(res=>this.det=res);
+    .subscribe(res=>this.det=res.data);
   }
+
+  getCountryData(data){
+    console.log("in contry data")
+    this.covid.getTravelDetails()
+      .subscribe(res=>{
+        res.data.forEach(element => {
+          if(element.location.toLowerCase()==data.toLowerCase()){
+            this.countryName=element.location
+
+             this.countryArr=element.data.split("\n")
+             console.log(this.countryArr)
+           
+            // this.cil=":"
+
+
+            
+
+            
+          }
+        });
+      })
+  
+  }
+
   }

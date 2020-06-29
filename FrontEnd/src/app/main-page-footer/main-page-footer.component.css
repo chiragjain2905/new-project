@@ -4,16 +4,15 @@
 }
 p{
    width: 100%;
-   height:1050px;
+   height: 130%;
    margin: 0px;
    background-color:#292f31;
    transition: 1s;
-   font-size: x-large;
-   
+   font-size: 140%;
    color: black;
-   padding-left: 40px;
-   padding-right: 40px;
-   padding-top: 2%;
+   padding-left: 10%;
+   padding-right: 10%;
+   font-weight: 700px;
    text-align: center;
     font-style: bolder;
 

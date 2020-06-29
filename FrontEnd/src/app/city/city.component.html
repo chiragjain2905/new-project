@@ -1,10 +1,11 @@
 <h1> </h1>
 <button (click)="getData()">show City wise</button>
 <input name="inp" #box (keyup.enter)="getcityData(box.value)" (blur)="0" >
-<h3><li>{{cityName}} {{cil}} {{cityConfirmed}}</li>
+<div>
+    <li>{{cityName}} {{cil}} {{cityConfirmed}}</li>
     <li>{{cityRecovered}}</li>
     <li>{{cityDead}}</li>
-</h3>
+</div>
 <ul *ngFor="let p of detail">
     <li>LOCATION-{{p.location}}
     </li>

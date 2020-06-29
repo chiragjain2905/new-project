@@ -1,8 +1,15 @@
+*{
+    /* background-color: brown; */
+    /* color: white; */
+
+}
+
 .search{
     width: 750px;
-    margin-left: 650PX;
-    margin-top: 50px;
-    margin-bottom: 60px;
+    display: flex;
+    margin-left: 28%;
+    /* margin-top: 50px;
+    margin-bottom: 60px; */
     font-size: 40px;
     border-radius: 30px;
     text-align: center;
@@ -19,4 +26,7 @@
     padding-bottom: 20px;
     text-decoration: underline;
 
+}
+.dropdown{
+    margin-left: 20%;
 }

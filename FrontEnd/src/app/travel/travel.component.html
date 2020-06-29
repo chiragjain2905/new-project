@@ -1,6 +1,13 @@
 <h1></h1>
 <button (click)="getData()">show Travel details</button>
-<ul *ngFor="let p of det.data">
+<input type="text" #vl  (keyup.enter)="getCountryData(vl.value)">
+<div>
+    <p>{{countryName}}</p>
+    <ul *ngFor="let i of countryArr">
+        <li >{{i}}<br></li>
+    </ul>
+</div>
+<ul *ngFor="let p of det">
     <li>LOCATION-{{p.location}}
     </li>
     <li>
