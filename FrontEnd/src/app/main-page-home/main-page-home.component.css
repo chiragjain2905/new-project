@@ -4,18 +4,9 @@
 
 }
 
-.search{
-    width: 750px;
-    display: flex;
-    margin-left: 28%;
-    /* margin-top: 50px;
-    margin-bottom: 60px; */
-    font-size: 40px;
-    border-radius: 30px;
-    text-align: center;
-    
 
-}
+
+
 .novel{
     color: white;
     text-align: center;
@@ -25,8 +16,20 @@
     font-size: 50px;
     padding-bottom: 20px;
     text-decoration: underline;
+    padding-top: 2%;
 
 }
 .dropdown{
     margin-left: 20%;
+}
+
+button{
+    margin-top: 3%;
+    margin-left: 40%;
+    width: 20%;
+    font-size: xx-large;
+    height: 10%;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 15px;
 }
