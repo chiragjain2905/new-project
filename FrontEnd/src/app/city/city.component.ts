@@ -14,17 +14,20 @@ public detail
   ngOnInit(): void {
     
   }
-  
+   
   getData(){
     this.covid.getCityDetails()
     .subscribe(res=>
       this.detail=res.data
-    )};
+    
+    )
+    document.getElementById("panel").style.display = "block"; };
 public cityName;
 cityConfirmed;
 cityDead;
-cityRecovered
+cityRecovered;
 cil;
+
     getcityData(data:string){
       this.covid.getCityDetails()
       .subscribe(res=>{
@@ -35,6 +38,7 @@ cil;
             this.cityDead=element.dead
             this.cityRecovered=element.recovered
             this.cil=":"
+            
 
 
             

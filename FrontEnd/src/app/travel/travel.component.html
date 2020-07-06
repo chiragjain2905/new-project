@@ -3,7 +3,7 @@
 <input type="text" #vl placeholder="travel details " (keyup.enter)="getCountryData(vl.value)">
 
 
-<div>
+<div id="panel" >
     <table>
         <th>LOCATION</th>
         <th>
@@ -21,10 +21,9 @@
     </table>
    
    
-</div>
+
 <table>
-    <th>LOCATION</th>
-    <th>DATA</th>
+    
 <tr *ngFor="let p of det">
     <td>{{p.location}}
     </td>
@@ -33,3 +32,4 @@
     </td>
 </tr>
 </table>
+</div>

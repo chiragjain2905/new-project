@@ -9,6 +9,9 @@ button{
     margin-top: 1%;
 
 }
+#panel {
+  display: none;
+}
 input{
 
     color: black;

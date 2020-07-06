@@ -19,6 +19,7 @@ countryArr;
   getData(){
     this.covid.getTravelDetails()
     .subscribe(res=>this.det=res.data);
+    document.getElementById("panel").style.display = "block";
   }
 
   getCountryData(data){
@@ -30,14 +31,7 @@ countryArr;
             this.countryName=element.location
 
              this.countryArr=element.data.split("\n")
-             console.log(this.countryArr)
-           
-            // this.cil=":"
-
-
-            
-
-            
+             console.log(this.countryArr)      
           }
         });
       })

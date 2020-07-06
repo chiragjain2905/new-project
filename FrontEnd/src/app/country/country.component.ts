@@ -15,6 +15,8 @@ export class CountryComponent implements OnInit {
   countryDead;
   countryRecovered
   cil;
+  va;
+  vb;
 
 
   ngOnInit(): void {
@@ -25,9 +27,11 @@ export class CountryComponent implements OnInit {
   getData(){
     this.covid.getCountryDetails()
     .subscribe(res=>{
-      this.detail=res.data
-      console.log("In get data")
-    });
+      this.detail=res.data;
+   
+      
+    })
+    document.getElementById("panel").style.display = "block"
   }
 
   getIndiaData(data:string){
@@ -41,6 +45,7 @@ export class CountryComponent implements OnInit {
           this.countryDead=element.dead;
           this.countryRecovered=element.recovered
           this.cil=":";
+          
         
         }
       });

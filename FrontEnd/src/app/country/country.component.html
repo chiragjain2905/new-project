@@ -1,9 +1,10 @@
 
 <button (click)="getData()">show Country Wise </button>
 <input #box (keyup.enter)="getIndiaData(box.value)" placeholder="Type The country name">
-<div >
+
     
-    <table>
+   <div id="panel" >
+    <table  >
         <tr >
             <th>LOCATION</th>
             <th>CONFIRMED</th>
@@ -19,17 +20,12 @@
         <td>
             {{countryDead}}
         </td>
-    </tr>
+    </tr>   
     </table>
-    
-   
-</div>
-<table>
-    <tr >
-        <th>LOCATION</th>
-        <th>CONFIRMED</th>
-        <th>DEAD</th>
-      </tr>
+
+    <table >
+
+
 <tr *ngFor="let p of detail">
 
     <td>{{p.location}}
@@ -41,22 +37,6 @@
         {{p.dead}}
     </td>
 </tr>
-</table>
-<!--<div>
-    <li>{{countryName}} {{cil}} {{countryConfirmed}}</li>
-    <li>{{countryRecovered}}</li>
-    <li>{{countryDead}}</li>
+</table>    
+
 </div>
-<table>
-    <tr *ngFor="let p of detail">
-        <td>LOCATION-{{p.location}}
-        </td>
-        <td>
-            CONFIRMED:{{p.confirmed}}
-        </td>
-        <td>
-            DEAD :{{p.dead}}
-        </td>
-    </tr>
-    <h1>{{detail}}</h1>
-</table>-->

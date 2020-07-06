@@ -54,4 +54,6 @@ table {
  li{
      color: black;
  }
- 
+ #panel {
+  display: none;
+}
